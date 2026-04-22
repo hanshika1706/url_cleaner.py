@@ -1,0 +1,7 @@
+from urllib.parse import urlparse
+
+url = input("Enter URL: ")
+parsed = urlparse(url)
+
+clean_url = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+print(clean_url)
